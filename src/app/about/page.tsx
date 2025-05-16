@@ -6,6 +6,7 @@ import MyPhilosophySectionAbout from "@/components/about/MyPhilosophySectionAbou
 import SkillsOverviewSection from "@/components/about/SkillsOverviewSection";
 import BeyondCodeExpandedSection from "@/components/about/BeyondCodeExpandedSection";
 import FutureAspirationsSection from "@/components/about/FutureAspirationsSection";
+import CTASection from "@/components/CTASection";
 
 
 export default function AboutPage() {
@@ -19,6 +20,7 @@ export default function AboutPage() {
             <SkillsOverviewSection/>
             <BeyondCodeExpandedSection/>
             <FutureAspirationsSection/>
+            <CTASection/>
         </>
     )
 }
