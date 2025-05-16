@@ -1,26 +1,85 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+@import "tailwindcss/preflight";
+@tailwind utilities;
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', sans-serif;
+  background-color: #0f172a;
+  color: #cbd5e1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+::selection {
+  background-color: #06b6d4;
+  color: white;
+}
+::-moz-selection {
+  background-color: #06b6d4;
+  color: white;
+}
+
+
+/* @keyframes blinkCursor { ... } */
+/* @keyframes pulseSlow { ... } */
+/* @keyframes bounceSlow { ... } */
+
+/* .btn { ... } */
+
+.section-title-custom {
+  @apply text-3xl md:text-4xl lg:text-5xl font-black text-center mb-10 md:mb-16 text-white relative pb-4;
+}
+.section-title-custom::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: linear-gradient(to right, #22d3ee, #a78bfa);
+  border-radius: 2px;
+  box-shadow: 0 0 15px rgba(34, 211, 238, 0.5);
+}
+
+.section-description {
+  @apply text-lg text-slate-300 max-w-2xl mx-auto text-center mb-12 md:mb-20 leading-relaxed font-normal;
+}
+
+.section-divider-top {
+  @apply border-t border-slate-700/50;
+}
+.section-divider-bottom {
+  @apply border-b border-slate-700/50;
+}
+
+.social-icon {
+  @apply inline-block text-gray-400 hover:text-cyan-400 transition-all duration-300 ease-in-out text-2xl mx-3 transform hover:scale-110 hover:-translate-y-1;
+}
+
+.hero-image-container {
+  position: relative;
+  max-width: 380px;
+  margin: auto;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease-out;
+}
+
+.hero-image-bg-shape {
+  position: absolute;
+  bottom: -10%;
+  right: -10%;
+  width: 60%;
+  height: 60%;
+  background: radial-gradient(circle, rgba(34, 211, 238, 0.1) 0%, rgba(34, 211, 238, 0) 70%);
+  border-radius: 50%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.dynamic-text-placeholder {
+  border-right: 3px solid #67e8f9;
+  padding-right: 4px;
+  display: inline-block;
+  min-height: 1em;
 }
