@@ -127,3 +127,15 @@ body {
 .workflow-step-card:hover .workflow-step-number-wrapper {
   @apply scale-110 shadow-lg shadow-cyan-500/30 from-cyan-500 to-blue-500;
 }
+
+
+.tech-icon-item {
+  @apply flex flex-col items-center p-3 rounded-lg transition-all duration-300 text-center;
+  min-width: 80px;
+}
+.tech-icon-bg {
+  @apply w-16 h-16 md:w-20 md:h-20 bg-slate-800 rounded-full flex items-center justify-center shadow-md group-hover:bg-slate-700/50 group-hover:shadow-lg transition-all duration-300 transform group-hover:scale-110;
+}
+.tech-icon-label {
+  @apply text-xs text-gray-400 mt-2 group-hover:text-cyan-300 transition-colors duration-300 font-medium;
+}
