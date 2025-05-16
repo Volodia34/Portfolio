@@ -211,4 +211,35 @@ section-title-custom {
   opacity: 0;
 }
 
+.value-card {
+  @apply bg-slate-800/70 backdrop-blur-sm p-8 rounded-xl shadow-lg text-center border border-slate-700 hover:border-green-500/50 transition-all duration-300 transform hover:-translate-y-1;
+}
+.value-card i {
+  @apply transition-transform duration-300;
+}
+.value-card:hover i {
+  @apply scale-110;
+}
+
+.section-title-custom {
+  @apply text-3xl md:text-4xl lg:text-5xl font-black text-center mb-10 md:mb-16 text-white relative pb-4;
+}
+.section-title-custom::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: linear-gradient(to right, #22d3ee, #a78bfa);
+  border-radius: 2px;
+  box-shadow: 0 0 15px rgba(34, 211, 238, 0.5);
+}
+.section-description {
+  @apply text-lg text-slate-300 max-w-3xl mx-auto text-center mb-12 md:mb-20 leading-relaxed font-normal;
+}
+.opacity-0 {
+  opacity: 0;
+}
 

@@ -2,6 +2,7 @@ import PageHeaderAbout from "@/components/about/PageHeaderAbout";
 import MyStorySection from "@/components/about/MyStorySection";
 import EducationSection from "@/components/about/EducationSection";
 import ExperienceSection from "@/components/about/ExperienceSection";
+import MyPhilosophySectionAbout from "@/components/about/MyPhilosophySectionAbout";
 
 
 export default function AboutPage() {
@@ -11,6 +12,7 @@ export default function AboutPage() {
             <MyStorySection/>
             <EducationSection/>
             <ExperienceSection/>
+            <MyPhilosophySectionAbout/>
         </>
     )
 }
