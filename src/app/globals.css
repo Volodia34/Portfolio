@@ -83,3 +83,17 @@ body {
   display: inline-block;
   min-height: 1em;
 }
+
+.what-i-do-card {
+  @apply bg-slate-800 p-6 md:p-8 rounded-xl shadow-xl border border-slate-700 hover:border-cyan-500/70 transition-all duration-300 ease-in-out transform hover:-translate-y-2 hover:shadow-cyan-500/20 text-center;
+}
+.card-icon-bg {
+  @apply w-16 h-16 rounded-full bg-slate-700/50 flex items-center justify-center mx-auto mb-4 transition-all duration-300;
+}
+.what-i-do-card:hover .card-icon-bg {
+  @apply bg-cyan-500/20 scale-110 shadow-lg;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
