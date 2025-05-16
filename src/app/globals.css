@@ -97,3 +97,19 @@ body {
 .opacity-0 {
   opacity: 0;
 }
+
+
+
+.approach-card {
+  @apply bg-slate-800/50 p-8 rounded-lg shadow-lg border border-transparent hover:border-purple-500/50 transition-all duration-300 ease-in-out text-center transform hover:scale-105;
+}
+.approach-card-icon-wrapper {
+  @apply w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-5 transition-all duration-300 transform group-hover:scale-110;
+}
+.approach-card:hover .approach-card-icon-wrapper {
+  @apply shadow-xl;
+}
+
+.patterned-bg {
+  /* background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23334155' fill-opacity='0.1'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
+}
