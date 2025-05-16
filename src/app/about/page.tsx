@@ -5,6 +5,7 @@ import ExperienceSection from "@/components/about/ExperienceSection";
 import MyPhilosophySectionAbout from "@/components/about/MyPhilosophySectionAbout";
 import SkillsOverviewSection from "@/components/about/SkillsOverviewSection";
 import BeyondCodeExpandedSection from "@/components/about/BeyondCodeExpandedSection";
+import FutureAspirationsSection from "@/components/about/FutureAspirationsSection";
 
 
 export default function AboutPage() {
@@ -17,6 +18,7 @@ export default function AboutPage() {
             <MyPhilosophySectionAbout/>
             <SkillsOverviewSection/>
             <BeyondCodeExpandedSection/>
+            <FutureAspirationsSection/>
         </>
     )
 }

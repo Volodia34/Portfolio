@@ -10,38 +10,40 @@ interface HobbyCardData {
     delay: number;
 }
 
-const hobbiesData: HobbyCardData[] = [
-    {
-        iconClass: 'fas fa-brain',
-        iconColorClass: 'text-yellow-400',
-        title: 'Self-Development',
-        description: 'I love learning new things in various fields, whether it\'s science, mathematics, or new concepts in technology.',
-        delay: 200,
-    },
-    {
-        iconClass: 'fas fa-music',
-        iconColorClass: 'text-cyan-400',
-        title: 'Music Enthusiast',
-        description: 'Exploring diverse genres and finding inspiration in melodies and rhythms. Music is a great companion for coding sessions.', // Новий опис
-        delay: 300,
-    },
-    {
-        iconClass: 'fas fa-running',
-        iconColorClass: 'text-green-400',
-        title: 'Sports & Activity',
-        description: 'Sports have been an integral part since childhood: athletics, biathlon, horizontal bars, calisthenics, street workout, volleyball, gym, and occasional running (with Garmin!).',
-        delay: 400,
-    },
-    {
-        iconClass: 'fas fa-lightbulb',
-        iconColorClass: 'text-purple-400',
-        title: 'New Ideas',
-        description: 'Always open to new ideas, projects, and opportunities for creativity and innovation.',
-        delay: 500,
-    },
-];
 
 const BeyondCodeExpandedSection: React.FC = () => {
+    const hobbiesData: HobbyCardData[] = [
+        {
+            iconClass: 'fas fa-brain',
+            iconColorClass: 'text-yellow-400',
+            title: 'Self-Development',
+            description: 'I love learning new things in various fields, whether it\'s science, mathematics, or new concepts in technology.',
+            delay: 200,
+        },
+        {
+            iconClass: 'fas fa-music',
+            iconColorClass: 'text-cyan-400',
+            title: 'Music Enthusiast',
+            description: 'Exploring diverse genres and finding inspiration in melodies and rhythms. Music is a great companion for coding sessions.', // Новий опис
+            delay: 300,
+        },
+        {
+            iconClass: 'fas fa-running',
+            iconColorClass: 'text-green-400',
+            title: 'Sports & Activity',
+            description: 'Sports have been an integral part since childhood: athletics, biathlon, horizontal bars, calisthenics, street workout, volleyball, gym, and occasional running (with Garmin!).',
+            delay: 400,
+        },
+        {
+            iconClass: 'fas fa-lightbulb',
+            iconColorClass: 'text-purple-400',
+            title: 'New Ideas',
+            description: 'Always open to new ideas, projects, and opportunities for creativity and innovation.',
+            delay: 500,
+        },
+    ];
+
+
     const sectionRef = useRef<HTMLDivElement>(null);
     const titleRef = useRef<HTMLHeadingElement>(null);
     const descriptionRef = useRef<HTMLParagraphElement>(null);
@@ -102,8 +104,8 @@ const BeyondCodeExpandedSection: React.FC = () => {
                     {hobbiesData.map((hobby, index) => (
                         <div
                             key={index}
-                            ref={el => cardsRef.current[index] = el}
-                            className="beyond-code-card opacity-0" // Використовуємо той самий стиль картки, що й на головній
+                            ref={el => { cardsRef.current[index] = el; }}
+                            className="beyond-code-card opacity-0"
                             data-delay={hobby.delay}
                         >
                             <i className={`${hobby.iconClass} text-3xl ${hobby.iconColorClass} mb-4`}></i>
