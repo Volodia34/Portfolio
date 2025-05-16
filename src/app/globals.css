@@ -113,3 +113,17 @@ body {
 .patterned-bg {
   /* background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23334155' fill-opacity='0.1'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
 }
+
+
+.workflow-step-card {
+  @apply bg-slate-800 p-6 rounded-lg shadow-xl text-center relative border border-slate-700 hover:border-cyan-500/50 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-cyan-500/25;
+}
+.workflow-step-number-wrapper {
+  @apply w-16 h-16 bg-gradient-to-br from-cyan-600 to-blue-600 text-white flex items-center justify-center rounded-full shadow-md border-2 border-slate-900 mx-auto mb-4 relative transition-all duration-300;
+}
+.workflow-step-icon {
+  @apply text-2xl text-white;
+}
+.workflow-step-card:hover .workflow-step-number-wrapper {
+  @apply scale-110 shadow-lg shadow-cyan-500/30 from-cyan-500 to-blue-500;
+}
