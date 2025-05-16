@@ -151,3 +151,6 @@ body {
   @apply scale-110;
 }
 
+.fact-card {
+  @apply bg-slate-800/70 backdrop-blur-sm p-6 rounded-lg shadow-lg text-center border border-slate-700 hover:border-cyan-500/50 transition-all duration-300 transform hover:scale-105;
+}
