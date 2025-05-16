@@ -3,17 +3,11 @@
 import { useEffect, useRef } from 'react';
 import Link from 'next/link';
 
-// declare global { // Вже оголошено
-//   interface Window {
-//     anime: any;
-//   }
-// }
-
 const CTASection: React.FC = () => {
     const sectionRef = useRef<HTMLDivElement>(null);
     const titleRef = useRef<HTMLHeadingElement>(null);
     const descriptionRef = useRef<HTMLParagraphElement>(null);
-    const buttonRef = useRef<HTMLAnchorElement>(null); // Ref для кнопки
+    const buttonRef = useRef<HTMLAnchorElement>(null);
 
     useEffect(() => {
         if (typeof window.anime !== 'undefined') {
@@ -64,7 +58,7 @@ const CTASection: React.FC = () => {
                     Have a Project in Mind?
                 </h2>
                 <p ref={descriptionRef} className="text-lg md:text-xl text-slate-100 mb-10 max-w-2xl mx-auto opacity-0" data-delay="100">
-                    I'm always excited to discuss new projects and innovative ideas. Whether you have a question or just want to say hi, feel free to reach out.
+                    I&apos;m always excited to discuss new projects and innovative ideas. Whether you have a question or just want to say hi, feel free to reach out.
                 </p>
                 <Link
                     href="/contact"
@@ -72,7 +66,7 @@ const CTASection: React.FC = () => {
                     className="btn bg-white text-slate-800 hover:bg-slate-100 text-lg font-bold shadow-lg hover:shadow-xl transform hover:scale-105 focus:ring-white/50 opacity-0"
                     data-delay="200"
                 >
-                    Let's Create Together!
+                    Let&apos;s Create Together!
                 </Link>
             </div>
         </section>
