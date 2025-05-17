@@ -13,6 +13,7 @@ export default function SkillsPage() {
             <AdditionalSkillsSection/>
             <LearningPhilosophySectionSkills/>
             <CurrentlyLearningSectionSkills/>
+            <CTASection/>
         </>
     );
 }
