@@ -33,7 +33,7 @@ const allProjectsData: Project[] = [
         features: 'Multi-page architecture (Home, About, Skills, Projects, Certificates, Contact), dynamic content rendering using Next.js App Router, interactive UI elements, smooth animations (Anime.js, CSS 3D transforms), project filtering, responsive design with Tailwind CSS.',
         learnings: 'Deepening skills in Next.js (App Router), TypeScript for type safety, advanced Tailwind CSS usage, implementing various animation techniques, component-based architecture, and understanding the deployment process for Next.js applications.',
         technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Anime.js', 'Git', 'Vercel'],
-        liveDemoUrl: 'portfolio-jade-six-50.vercel.app',
+        liveDemoUrl: 'https://portfolio-jade-six-50.vercel.app/',
         githubUrl: '#',
         isFeatured: true,
         delay: 100,
