@@ -17,14 +17,14 @@ const BeyondCodeExpandedSection: React.FC = () => {
             iconClass: 'fas fa-brain',
             iconColorClass: 'text-yellow-400',
             title: 'Self-Development',
-            description: 'I love learning new things in various fields, whether it\'s science, mathematics, or new concepts in technology.',
+            description: 'I love learning new things in various fields, whether it&rsquo;s science, mathematics, or new concepts in technology.',
             delay: 200,
         },
         {
             iconClass: 'fas fa-music',
             iconColorClass: 'text-cyan-400',
             title: 'Music Enthusiast',
-            description: 'Exploring diverse genres and finding inspiration in melodies and rhythms. Music is a great companion for coding sessions.', // Новий опис
+            description: 'Exploring diverse genres and finding inspiration in melodies and rhythms. Music is a great companion for coding sessions.',
             delay: 300,
         },
         {
@@ -98,7 +98,7 @@ const BeyondCodeExpandedSection: React.FC = () => {
                     Beyond The Code
                 </h2>
                 <p ref={descriptionRef} className="section-description opacity-0" data-delay="100">
-                    Life isn't just about programming. Here's what inspires me and helps me grow.
+                    Life isn&rsquo;t just about programming. Here&rsquo;s what inspires me and helps me grow.
                 </p>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     {hobbiesData.map((hobby, index) => (
