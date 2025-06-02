@@ -50,8 +50,8 @@ const MyStorySection: React.FC = () => {
                 <div className="grid md:grid-cols-5 gap-10 lg:gap-16 items-center">
                     <div ref={imageRef} className="md:col-span-2 opacity-0" data-delay="200">
                         <Image
-                            src="https://placehold.co/600x750/1E293B/9CA3AF?text=My+Photo+Here&font=inter"
-                            alt="Photo of [Your Name]"
+                            src="/images/photos/photo_2.png"
+                            alt="Photo of Volodia"
                             width={600}
                             height={750}
                             className="rounded-xl shadow-2xl w-full object-cover border-4 border-slate-700 hover:border-cyan-500/70 transition-all duration-300 transform hover:scale-105"

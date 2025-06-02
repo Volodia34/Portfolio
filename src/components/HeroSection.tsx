@@ -188,9 +188,9 @@ const HeroSection: React.FC = () => {
                     <div ref={heroImageWrapperRef} className="md:w-2/5 lg:w-5/12 flex justify-center md:justify-end relative opacity-0">
                         <div className="hero-image-container p-2 border-2 border-cyan-500/30 rounded-xl bg-slate-800/20 backdrop-blur-sm" data-tilt>
                             <Image
-                                src="https://placehold.co/500x600/0F172A/38BDF8?text=Your+Awesome+Photo&font=inter"
-                                alt="[Your Name] - Frontend Engineer"
-                                width={500}
+                                src="/images/photos/photo_1.png"
+                                alt="Volodia - Frontend Engineer"
+                                width={600}
                                 height={600}
                                 className="rounded-lg shadow-2xl object-cover w-full max-w-sm md:max-w-md transform transition-all duration-500 hover:scale-105 hover:shadow-cyan-400/30"
                                 priority
