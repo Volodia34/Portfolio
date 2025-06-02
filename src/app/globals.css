@@ -341,36 +341,14 @@ section-title-custom {
   @apply !h-16 md:!h-18 !w-auto min-w-[4rem] md:min-w-[4.5rem] !px-2 !py-1 flex items-center justify-center; /* Вирівнюємо висоту з іконками, ширина авто, але з мінімумом */
 }
 
-.skill-icon-bg i, .skill-icon-bg span, .skill-icon-bg img {
-  color: #94a3b8;
-  transition: color 0.3s ease-in-out, filter 0.3s ease-in-out;
-}
+/*.skill-icon-bg i, .skill-icon-bg span, .skill-icon-bg img {*/
+/*  color: #94a3b8;*/
+/*  transition: color 0.3s ease-in-out, filter 0.3s ease-in-out;*/
+/*}*/
 
 .skill-icon-label {
   @apply text-xs text-gray-400 mt-2 group-hover:text-cyan-300 transition-colors duration-300 font-medium leading-tight;
 }
-
-.skill-icon-item.group:hover .skill-icon-bg .fa-react { color: #22d3ee; }
-.skill-icon-item.group:hover .skill-icon-bg .fa-angular { color: #dd0031; }
-.skill-icon-item.group:hover .skill-icon-bg .fa-js-square { color: #facc15; }
-.skill-icon-item.group:hover .skill-icon-bg .fa-node-js { color: #4ade80; }
-.skill-icon-item.group:hover .skill-icon-bg .fa-git-alt { color: #f97316; }
-.skill-icon-item.group:hover .skill-icon-bg span { color: #60a5fa; }
-.skill-icon-item.group:hover .skill-icon-bg .fa-html5 { color: #e34f26; }
-.skill-icon-item.group:hover .skill-icon-bg .fa-css3-alt { color: #1572b6; }
-.skill-icon-item.group:hover .skill-icon-bg .fa-sass { color: #cc6699; }
-.skill-icon-item.group:hover .skill-icon-bg .fa-jira { color: #0052cc; }
-.skill-icon-item.group:hover .skill-icon-bg .fa-confluence { color: #172b4d; }
-.skill-icon-item.group:hover .skill-icon-bg .fa-npm { color: #cb3837; }
-.skill-icon-item.group:hover .skill-icon-bg .fa-yarn { color: #2c8ebb; }
-.skill-icon-item.group:hover .skill-icon-bg .fa-docker { color: #2496ed; }
-.skill-icon-item.group:hover .skill-icon-bg .fa-bolt { color: #f7df1e; } /* Vite */
-.skill-icon-item.group:hover .skill-icon-bg .fa-box-open { color: #8ed6fb; } /* Webpack */
-.skill-icon-item.group:hover .skill-icon-bg .fa-cloud-upload-alt { color: #ffffff; } /* Vercel/Netlify */
-.skill-icon-item.group:hover .skill-icon-bg .fa-jenkins { color: #d24939; }
-.skill-icon-item.group:hover .skill-icon-bg .fa-leaf { color: #4db33d; } /* MongoDB */
-.skill-icon-item.group:hover .skill-icon-bg .fa-project-diagram { color: #e10098; } /* GraphQL */
-.skill-icon-item.group:hover .skill-icon-bg .fa-flask { color: #99c53d; } /* Jest */
 
 
 .skill-icon-label {
@@ -403,10 +381,10 @@ section-title-custom {
   @apply w-auto min-w-[70px] h-16 md:h-18 px-3;
 }
 
-.skill-icon-bg i, .skill-icon-bg span {
-  color: #94a3b8;
-  transition: color 0.3s ease-in-out;
-}
+/*.skill-icon-bg i, .skill-icon-bg span {*/
+/*  color: #94a3b8;*/
+/*  transition: color 0.3s ease-in-out;*/
+/*}*/
 
 .skill-icon-label {
   @apply text-xs text-gray-400 mt-2 group-hover:text-cyan-300 transition-colors duration-300 font-medium leading-tight;
@@ -433,13 +411,13 @@ section-title-custom {
   max-width: 130px;
 }
 .skill-icon-bg {
-  @apply w-16 h-16 md:w-18 md:h-18 bg-slate-700/50 rounded-lg flex items-center justify-center shadow-md group-hover:bg-slate-600/70 group-hover:shadow-lg transition-all duration-300 p-2;
+  @apply w-16 h-16 md:w-18 md:h-18 bg-slate-700/50 rounded-lg flex items-center justify-center shadow-md group-hover:shadow-lg transition-all duration-300 p-2;
 }
 
-.skill-icon-bg i, .skill-icon-bg span, .skill-icon-bg img {
-  color: #94a3b8;
-  transition: color 0.3s ease-in-out, filter 0.3s ease-in-out;
-}
+/*.skill-icon-bg i, .skill-icon-bg span, .skill-icon-bg img {*/
+/*  color: #94a3b8;*/
+/*  transition: color 0.3s ease-in-out, filter 0.3s ease-in-out;*/
+/*}*/
 
 .skill-icon-label {
   @apply text-xs text-gray-400 mt-2 group-hover:text-cyan-300 transition-colors duration-300 font-medium leading-tight;

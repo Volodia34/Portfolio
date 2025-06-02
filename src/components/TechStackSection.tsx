@@ -22,7 +22,7 @@ const techStackData: TechItem[] = [
     { type: 'icon', content: 'fab fa-react', label: 'React', hoverColorClass: 'group-hover:text-cyan-400', delay: 200 },
     { type: 'icon', content: 'fab fa-angular', label: 'Angular', hoverColorClass: 'group-hover:text-red-500', delay: 250 },
     { type: 'icon', content: 'fab fa-js-square', label: 'JavaScript', hoverColorClass: 'group-hover:text-yellow-400', delay: 300 },
-    { type: 'image', content: 'https://raw.githubusercontent.com/tailwindlabs/tailwindcss/master/.github/logo-mark.svg', label: 'Tailwind CSS', delay: 350 },
+    { type: 'text', content: 'TW', label: 'Tailwind CSS', hoverColorClass: 'group-hover:text-sky-400', delay: 350 },
     { type: 'icon', content: 'fab fa-node-js', label: 'Node.js', hoverColorClass: 'group-hover:text-green-400', delay: 400 },
     { type: 'icon', content: 'fab fa-git-alt', label: 'Git', hoverColorClass: 'group-hover:text-orange-500', delay: 450 },
     { type: 'text', content: 'TS', label: 'TypeScript', hoverColorClass: 'group-hover:text-blue-400', delay: 500 },
