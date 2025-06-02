@@ -1,7 +1,6 @@
 'use client';
 import { useEffect, useRef } from 'react';
 
-
 interface AdditionalSkillItem {
     text: string;
     iconClass: string;
@@ -11,17 +10,17 @@ interface AdditionalSkillItem {
 
 const additionalSkillsData: AdditionalSkillItem[] = [
     { text: 'Algorithm & Data Structures', iconClass: 'fas fa-sitemap', iconColorClass: 'text-cyan-400', delay: 600 },
-    { text: 'Clean Code Principles', iconClass: 'fas fa-brush', iconColorClass: 'text-purple-400', delay: 650 },
-    { text: 'Design Patterns (SOLID, GRASP, KISS, DRY)', iconClass: 'fas fa-layer-group', iconColorClass: 'text-pink-400', delay: 700 },
-    { text: 'REST APIs', iconClass: 'fas fa-exchange-alt', iconColorClass: 'text-yellow-400', delay: 750 },
-    { text: 'Event Loop, DOM', iconClass: 'fas fa-history', iconColorClass: 'text-green-400', delay: 800 },
-    { text: 'Web Accessibility (A11y)', iconClass: 'fas fa-universal-access', iconColorClass: 'text-orange-400', delay: 850 },
-    { text: 'Performance Optimization', iconClass: 'fas fa-tachometer-alt', iconColorClass: 'text-teal-400', delay: 900 },
-    { text: 'Software Architecture Fundamentals', iconClass: 'fas fa-project-diagram', iconColorClass: 'text-indigo-400', delay: 950 },
-    { text: 'Basic Security Principles', iconClass: 'fas fa-shield-alt', iconColorClass: 'text-red-400', delay: 1000 },
-    { text: 'Operating Systems & Networks Basics', iconClass: 'fas fa-network-wired', iconColorClass: 'text-lime-400', delay: 1050 },
-    { text: 'Programming Paradigms (OOP, FP)', iconClass: 'fas fa-brain', iconColorClass: 'text-sky-400', delay: 1100 },
-    { text: 'English (Technical & Communication)', iconClass: 'fas fa-language', iconColorClass: 'text-rose-400', delay: 1150 },
+    { text: 'Clean Code Principles', iconClass: 'fas fa-brush', iconColorClass: 'text-purple-400', delay: 630 },
+    { text: 'Design Patterns (SOLID, GRASP, KISS, DRY)', iconClass: 'fas fa-layer-group', iconColorClass: 'text-pink-400', delay: 660 },
+    { text: 'Software Architecture Fundamentals', iconClass: 'fas fa-project-diagram', iconColorClass: 'text-indigo-400', delay: 690 },
+    { text: 'Basic Security Principles', iconClass: 'fas fa-shield-alt', iconColorClass: 'text-red-400', delay: 720 },
+    { text: 'Operating Systems & Networks Basics', iconClass: 'fas fa-network-wired', iconColorClass: 'text-lime-400', delay: 750 },
+    { text: 'Programming Paradigms (OOP, FP)', iconClass: 'fas fa-brain', iconColorClass: 'text-sky-400', delay: 780 },
+    { text: 'Agile/Scrum Methodologies', iconClass: 'fas fa-users-cog', iconColorClass: 'text-blue-400', delay: 810 },
+    { text: 'Code Review Practices', iconClass: 'fas fa-glasses', iconColorClass: 'text-teal-400', delay: 840 },
+    { text: 'Problem-Solving & Analytical Thinking', iconClass: 'fas fa-lightbulb', iconColorClass: 'text-yellow-400', delay: 870 },
+    { text: 'Continuous Learning & Adaptability', iconClass: 'fas fa-seedling', iconColorClass: 'text-green-400', delay: 900 },
+    { text: 'English (Technical & Communication)', iconClass: 'fas fa-language', iconColorClass: 'text-rose-400', delay: 930 },
 ];
 
 const AdditionalSkillsSection: React.FC = () => {
@@ -50,10 +49,10 @@ const AdditionalSkillsSection: React.FC = () => {
                 });
             };
 
-            const observerOptions = { threshold: 0.1 }; // Спрацює, коли 10% елемента видно
+            const observerOptions = { threshold: 0.1 };
             const observer = new IntersectionObserver(observerCallback, observerOptions);
 
-            const elementsToObserve = [titleRef.current, ...itemsRef.current];
+            const elementsToObserve = [titleRef.current, ...itemsRef.current].filter(Boolean);
             elementsToObserve.forEach(el => {
                 if (el) observer.observe(el);
             });
@@ -64,7 +63,7 @@ const AdditionalSkillsSection: React.FC = () => {
                 });
             };
         } else {
-            const elements = [titleRef.current, ...itemsRef.current];
+            const elements = [titleRef.current, ...itemsRef.current].filter(Boolean);
             elements.forEach(el => {
                 if (el) el.style.opacity = '1';
             });
@@ -72,7 +71,7 @@ const AdditionalSkillsSection: React.FC = () => {
     }, []);
 
     return (
-        <section ref={sectionRef} id="additional-skills" className="mt-16 pt-16 border-t border-slate-700/50 pb-20 md:pb-28"> {/* Додано pb */}
+        <section ref={sectionRef} id="additional-skills" className="mt-16 pt-16 border-t border-slate-700/50 pb-20 md:pb-28">
             <div className="container mx-auto px-6">
                 <h2 ref={titleRef} className="text-3xl font-bold text-white text-center mb-12 opacity-0" data-delay="550">
                     Additional Skills & Knowledge
